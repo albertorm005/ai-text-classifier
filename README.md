@@ -1,95 +1,149 @@
-# 🌍 AI Multilingual Sentiment Classifier
+🌍 AI Multilingual Sentiment Classifier
 
-This project is a **Machine Learning application for sentiment analysis** that can classify text as **positive or negative** in multiple languages.
+A Machine Learning web application that analyzes the sentiment of text in multiple languages.
 
-The classifier supports:
+The system can classify sentences as positive or negative using Natural Language Processing and Machine Learning techniques.
 
-- English 🇬🇧
-- Spanish 🇪🇸
-- German 🇩🇪
-- French 🇫🇷
+Supported languages:
 
-The system trains a separate model for each language and loads the appropriate model depending on the user's selection.
+🇬🇧 English
 
----
+🇪🇸 Spanish
 
-# 🚀 Features
+🇩🇪 German
 
-- Multilingual sentiment analysis
-- Separate datasets for each language
-- Machine learning model training
-- Saved trained models using `joblib`
-- Interactive CLI interface
-- Real-time text prediction
+🇫🇷 French
 
----
+The project includes model training, dataset management, and a responsive web interface built with Flask.
 
-# 🧠 Machine Learning Model
+🚀 Features
 
-The project uses:
+Multilingual sentiment analysis
 
-- **TF-IDF Vectorization** for text feature extraction
-- **Multinomial Naive Bayes** for classification
+Machine Learning model training
+
+Separate datasets for each language
+
+TF-IDF text vectorization
+
+Naive Bayes classification
+
+Saved trained models using joblib
+
+Interactive CLI prediction
+
+Responsive Flask Web Application
+
+Prediction confidence score
+
+🖥 Web Interface
+
+The application includes a responsive web interface where users can:
+
+Select a language
+
+Enter a sentence
+
+Receive sentiment prediction and confidence score
+
+Example
+
+Sentence:
+
+I love this game
+
+Prediction:
+
+Positive
+Confidence: 92%
+📸 Screenshot
+
+🧠 Machine Learning Model
+
+The sentiment classifier uses:
+
+Feature Extraction
+
+TF-IDF (Term Frequency – Inverse Document Frequency)
+
+Classification Algorithm
+
+Multinomial Naive Bayes
 
 Each language has its own trained model.
 
----
-
-# 📂 Project Structure
-
-
+📂 Project Structure
 ai-text-classifier
 │
 ├── dataset
-│ ├── english_reviews.csv
-│ ├── spanish_reviews.csv
-│ ├── german_reviews.csv
-│ └── french_reviews.csv
+│   ├── english_reviews.csv
+│   ├── spanish_reviews.csv
+│   ├── german_reviews.csv
+│   └── french_reviews.csv
 │
 ├── model
-│ └── train_model.py
+│   └── train_model.py
 │
 ├── models
-│ ├── english_model.pkl
-│ ├── spanish_model.pkl
-│ ├── german_model.pkl
-│ └── french_model.pkl
+│   ├── english_model.pkl
+│   ├── spanish_model.pkl
+│   ├── german_model.pkl
+│   └── french_model.pkl
 │
+├── static
+│   └── style.css
+│
+├── templates
+│   └── index.html
+│
+├── screenshots
+│   └── web_app.png
+│
+├── app.py
 ├── predict.py
 ├── requirements.txt
 └── README.md
-
-
----
-
-# ⚙️ Installation
+⚙️ Installation
 
 Clone the repository:
 
-```bash
-git clone https://github.com/YOUR_USERNAME/ai-text-classifier.git
+git clone https://github.com/albertorm005/ai-text-classifier.git
 cd ai-text-classifier
 
 Install dependencies:
 
 pip install -r requirements.txt
-🏋️ Training the Models
+🏋️ Train the Models
 
-To train the machine learning models:
+Run the training script:
 
 python model/train_model.py
 
-This will generate the trained models inside the models folder.
+This will generate trained models inside the models folder.
 
-💻 Running the Classifier
+Example output:
 
-Run the prediction script:
+Training model for english...
+english model accuracy: 0.80
+
+Training model for spanish...
+spanish model accuracy: 0.82
+💻 Running the Web Application
+
+Start the Flask application:
+
+python app.py
+
+Open in your browser:
+
+http://127.0.0.1:5000
+💬 CLI Prediction (Optional)
+
+You can also run predictions from the terminal:
 
 python predict.py
 
 Example:
-
-AI Sentiment Classifier
 
 Choose language:
 1 English
@@ -97,25 +151,22 @@ Choose language:
 3 German
 4 French
 
-Enter number: 2
-Enter a sentence: me encanta este juego
+Enter sentence:
+Me encanta este juego
 
-Predicted sentiment: positive
+Prediction: positive
+Confidence: 88%
 📊 Dataset
 
-Each language dataset contains 50 labeled sentences:
+Each dataset contains 50 labeled sentences:
 
 25 positive
 
 25 negative
 
-This allows the model to learn basic sentiment patterns for each language.
+The datasets are separated by language.
 
-⚠️ Limitations
-
-The dataset used for training is relatively small. Because of this, predictions may not always be perfectly accurate for unseen vocabulary.
-
-Increasing the dataset size would significantly improve model performance.
+Increasing dataset size would significantly improve model accuracy.
 
 🛠 Technologies Used
 
@@ -125,24 +176,50 @@ Pandas
 
 Scikit-learn
 
+Flask
+
 Joblib
 
-TF-IDF
+TF-IDF Vectorization
 
 Naive Bayes
 
-📌 Future Improvements
+HTML
 
-Possible improvements for this project:
+CSS
 
-Add more training data
+⚠ Limitations
 
-Support more languages
+The current dataset is relatively small, which may affect prediction accuracy.
 
-Build a web interface with Flask
+For better performance, the model should be trained with larger and more diverse datasets.
 
-Use more advanced NLP models (BERT, transformers)
+🚀 Future Improvements
+
+Possible improvements for the project:
+
+Automatic language detection
+
+Larger multilingual datasets
+
+Deep Learning models (BERT / Transformers)
+
+REST API
+
+User sentiment history
+
+Visualization of prediction probabilities
+
+Deploy the application online
 
 👨‍💻 Author
 
 Developed as a Machine Learning portfolio project.
+
+Author:
+
+Alberto Rodríguez
+
+⭐ If you like this project
+
+Give the repository a star ⭐ on GitHub!
