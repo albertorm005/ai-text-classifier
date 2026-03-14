@@ -1,5 +1,9 @@
 🌍 AI Multilingual Sentiment Classifier
 
+## Web Interface
+
+![Web App](screenshots/web_app.png)
+
 A Machine Learning web application that analyzes the sentiment of text in multiple languages.
 
 The system can classify sentences as positive or negative using Natural Language Processing and Machine Learning techniques.
