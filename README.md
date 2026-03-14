@@ -1,5 +1,13 @@
 🌍 AI Multilingual Sentiment Classifier
 
+# 🌍 AI Multilingual Sentiment Classifier
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Flask](https://img.shields.io/badge/Framework-Flask-green)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
+![NLP](https://img.shields.io/badge/NLP-TFIDF-yellow)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
 ## Web Interface
 
 ![Web App](screenshots/web_app.png)
