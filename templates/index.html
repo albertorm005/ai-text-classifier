@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Sentiment Classifier</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🌍 AI Multilingual Sentiment Classifier</h1>
+
+<p class="subtitle">
+Analyze the sentiment of text in multiple languages using Machine Learning
+</p>
+
+<form method="post" class="card">
+
+<label>Select language</label>
+
+<select name="language">
+<option value="english">🇬🇧 English</option>
+<option value="spanish">🇪🇸 Spanish</option>
+<option value="german">🇩🇪 German</option>
+<option value="french">🇫🇷 French</option>
+</select>
+
+<label>Enter a sentence</label>
+
+<input
+type="text"
+name="text"
+placeholder="Type something..."
+required
+>
+
+<button type="submit">
+Predict Sentiment
+</button>
+
+</form>
+
+{% if prediction %}
+
+<div class="result">
+
+<h2>Prediction</h2>
+
+<p class="sentiment {{ prediction }}">
+{{ prediction }}
+</p>
+
+<p class="confidence">
+Confidence: {{ confidence }}%
+</p>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+</html>
