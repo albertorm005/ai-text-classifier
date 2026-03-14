@@ -1,0 +1,51 @@
+text,label
+Me encanta esta película,positive
+Este producto es increíble,positive
+Este teléfono funciona perfecto,positive
+Me gusta mucho este juego,positive
+La comida está deliciosa,positive
+Este portátil es muy rápido,positive
+Disfruto usar esta aplicación,positive
+El servicio fue excelente,positive
+Este diseño es muy bonito,positive
+Todo funciona perfectamente,positive
+Estoy muy feliz con esta compra,positive
+Esta cámara toma buenas fotos,positive
+La batería dura mucho,positive
+Este libro es muy interesante,positive
+La calidad del sonido es fantástica,positive
+Esta silla es muy cómoda,positive
+Me gusta el color de este coche,positive
+Esta web es fácil de usar,positive
+La interfaz es muy limpia,positive
+Este programa funciona perfecto,positive
+El rendimiento es impresionante,positive
+La experiencia fue maravillosa,positive
+Este software es muy útil,positive
+Me gustó mucho usar esto,positive
+Este dispositivo funciona genial,positive
+Odio esta película,negative
+Este producto es terrible,negative
+Este teléfono es horrible,negative
+El juego es aburrido,negative
+La comida sabe mal,negative
+Este portátil es muy lento,negative
+No me gusta esta aplicación,negative
+El servicio fue horrible,negative
+Este diseño es feo,negative
+Nada funciona bien,negative
+Esta compra fue un error,negative
+Esta cámara toma malas fotos,negative
+La batería se descarga rápido,negative
+Este libro es muy aburrido,negative
+La calidad del sonido es mala,negative
+Esta silla es incómoda,negative
+No me gusta el color de este coche,negative
+Esta web es confusa,negative
+La interfaz es desordenada,negative
+Este programa falla mucho,negative
+El rendimiento es terrible,negative
+La experiencia fue horrible,negative
+Este software es inútil,negative
+Me arrepiento de comprar esto,negative
+Este dispositivo funciona mal,negative
